@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ShopEasy - Inicia sesión en tu cuenta">
+  <title>ShopEasy — Iniciar sesión</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav aria-label="Navegación principal">
+      <a href="home.html">ShopEasy</a>
+      <a href="home.html">Volver a la tienda</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- INFORMACIÓN -->
+    <aside>
+      <h2>Bienvenido de vuelta a ShopEasy</h2>
+      <p>Accede a tu cuenta para gestionar tus pedidos,
+        listas de deseos y aprovechar ofertas exclusivas.</p>
+      <ul>
+        <li>Envío gratis en pedidos mayores a $50</li>
+        <li>Acceso anticipado a ofertas flash</li>
+        <li>Puntos de recompensa en cada compra</li>
+        <li>Devoluciones fáciles en 30 días</li>
+      </ul>
+    </aside>
+
+    <!-- LOGIN -->
+    <section aria-labelledby="titulo-login">
+      <h1 id="titulo-login">Iniciar sesión</h1>
+      <p>Ingresa tus credenciales para continuar</p>
+      <form action="#" method="POST">
+        <!-- EMAIL -->
+        <label for="email">Correo electrónico</label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="tu@correo.com" autocomplete="email" required>
+        <br><br>
+        <!-- PASSWORD -->
+        <label for="password">Contraseña</label>
+        <br>
+        <input type="password" id="password" name="password" placeholder="••••••••" autocomplete="current-password"
+          required>
+        <br><br>
+        <!-- OPCIONES -->
+        <label><input type="checkbox" name="recordarme">Recordarme</label>
+        <br><br>
+        <a href="#">¿Olvidaste tu contraseña?</a>
+        <br><br>
+        <!-- BOTÓN -->
+        <button type="submit" onclick="event.preventDefault(); window.location='../home.html'">Ingresar a mi cuenta</button>
+      </form>
+      <hr>
+      <!-- REDES -->
+      <section aria-label="Inicio de sesión con redes sociales">
+        <p>O continúa con</p>
+        <button type="button">Google</button>
+        <button type="button">Facebook</button>
+      </section>
+      <br>
+      <!-- REGISTRO -->
+      <p>¿No tienes cuenta?<a href="#">Regístrate gratis</a></p>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      © 2025 ShopEasy ·
+      <a href="#">Privacidad</a> ·
+      <a href="#">Términos</a> ·
+      <a href="#">Ayuda</a>
+    </p>
+  </footer>
+</body>
+
+</html>

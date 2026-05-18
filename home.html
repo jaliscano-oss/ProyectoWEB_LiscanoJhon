@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEasy – Página de Inicio</title>
+</head>
+<body>
+
+  <!-- ── ENCABEZADO / NAVEGACIÓN ─────────────────────────── -->
+  <header align = center>
+    <h1 style="color: darkblue;">ShopEasy</h1>
+    <p style="font-family: 'Times New Roman', Times, serif;"><em>Compra fácil, recibe rápido.</em></p>
+
+    <nav>
+      <ul style="padding: 0;">
+        <li style="display: inline; margin: 0 10px;"><a href="home.html">Inicio</a></li>
+        <li style="display: inline; margin: 0 10px;"><a href="catalogo.html">Catálogo</a></li>
+        <li style="display: inline; margin: 0 10px;"><a href="carrito.html">Carrito</a></li>
+        <li style="display: inline; margin: 0 10px;"><a href="/login/login.html">Iniciar sesión</a></li>
+        <li style="display: inline; margin: 0 10px;"><a href="registro.html">Registrarse</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── CONTENIDO PRINCIPAL ─────────────────────────────── -->
+  <main align = center>
+
+    <!-- SECCIÓN HERO / BIENVENIDA -->
+    <section style="background-color: darkblue; color: white; margin: 0 300px;">
+      <h2>Bienvenido a ShopEasy</h2>
+      <p>
+        Encuentra los mejores productos al mejor precio.
+        Compra desde cualquier lugar y recíbelos en la puerta de tu casa.
+      </p>
+      <a href="catalogo.html" style="color: white;" >Ver catálogo</a>
+      &nbsp;
+      <a href="registro.html" style="color: white;">Crear cuenta gratis</a>
+    </section>
+
+    <!-- SECCIÓN CATEGORÍAS -->
+    <section>
+      <h2>Categorías destacadas</h2>
+
+      <article>
+        <h3>Electrónica</h3>
+        <p>Auriculares, cargadores, accesorios para laptop y más.</p>
+        <a href="catalogo.html?categoria=electronica">Ver productos</a>
+      </article>
+
+      <article>
+        <h3>Ropa y Moda</h3>
+        <p>Camisetas, zapatos, accesorios para toda la familia.</p>
+        <a href="catalogo.html?categoria=ropa">Ver productos</a>
+      </article>
+
+      <article>
+        <h3>Hogar</h3>
+        <p>Todo lo que necesitas para decorar y organizar tu hogar.</p>
+        <a href="catalogo.html?categoria=hogar">Ver productos</a>
+      </article>
+
+      <article>
+        <h3>Deportes</h3>
+        <p>Equipamiento deportivo para tus actividades favoritas.</p>
+        <a href="catalogo.html?categoria=deportes">Ver productos</a>
+      </article>
+    </section>
+
+    <!-- SECCIÓN PRODUCTOS DESTACADOS -->
+    <section>
+      <h2>Productos destacados</h2>
+
+      <article>
+        <h3>Auriculares Bluetooth</h3>
+        <p>Categoría: Electrónica</p>
+        <p>Precio: <strong>$45.99</strong></p>
+        <p>Stock disponible: 12 unidades</p>
+        <a href="detalle.html?id=501">Ver detalle</a>
+        &nbsp;
+        <a href="carrito.html?agregar=501">Agregar al carrito</a>
+      </article>
+
+      <article>
+        <h3>Funda para laptop 15"</h3>
+        <p>Categoría: Accesorios</p>
+        <p>Precio: <strong>$18.50</strong></p>
+        <p>Stock disponible: 30 unidades</p>
+        <a href="detalle.html?id=502">Ver detalle</a>
+        &nbsp;
+        <a href="carrito.html?agregar=502">Agregar al carrito</a>
+      </article>
+
+      <article>
+        <h3>Camiseta deportiva</h3>
+        <p>Categoría: Ropa</p>
+        <p>Precio: <strong>$12.00</strong></p>
+        <p>Stock disponible: 50 unidades</p>
+        <a href="detalle.html?id=503">Ver detalle</a>
+        &nbsp;
+        <a href="carrito.html?agregar=503">Agregar al carrito</a>
+      </article>
+
+    </section>
+
+    <!-- SECCIÓN BÚSQUEDA -->
+    <section>
+      <h2>Buscar productos</h2>
+      <form action="catalogo.html" method="get">
+        <label for="busqueda">¿Qué estás buscando?</label><br />
+        <input
+          type="search"
+          id="busqueda"
+          name="q"
+          placeholder="Ej: auriculares, camiseta, silla..."
+        />
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <!-- SECCIÓN POR QUÉ ELEGIRNOS -->
+    <section>
+      <h2>¿Por qué elegir ShopEasy?</h2>
+
+      <article>
+        <h3>Envío rápido</h3>
+        <p>Recibe tus pedidos en 24 a 48 horas en Santo Domingo y ciudades cercanas.</p>
+      </article>
+
+      <article>
+        <h3>Pagos seguros</h3>
+        <p>Aceptamos tarjeta de crédito, débito y pago contra entrega.</p>
+      </article>
+
+      <article>
+        <h3>Garantía de devolución</h3>
+        <p>Si no estás satisfecho, tienes 7 días para devolver tu compra sin costo.</p>
+      </article>
+
+      <article>
+        <h3>Atención al cliente</h3>
+        <p>Estamos disponibles de lunes a sábado de 8:00 a 18:00.</p>
+      </article>
+    </section>
+
+    <!-- SECCIÓN OFERTA ESPECIAL -->
+    <section>
+      <h2>Oferta del día</h2>
+      <p>¡Hoy solamente! 20% de descuento en toda la categoría de Electrónica.</p>
+      <p>Usa el código: <strong>SHOP20</strong></p>
+      <a href="catalogo.html?categoria=electronica">Aprovechar oferta</a>
+    </section>
+
+  </main>
+
+  <!-- ── PIE DE PÁGINA ───────────────────────────────────── -->
+  <footer>
+    <section>
+      <h3>ShopEasy</h3>
+      <p>Tu tienda online de confianza en Santo Domingo, Ecuador.</p>
+    </section>
+
+    <nav>
+      <h4>Páginas</h4>
+      <ul>
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="/login/login.html">Iniciar sesión</a></li>
+        <li><a href="registro.html">Registrarse</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <h4>Contacto</h4>
+      <address>
+        <p>Email: <a href="mailto:contacto@shopeasy.ec">contacto@shopeasy.ec</a></p>
+        <p>Teléfono: <a href="tel:+593991234567">+593 99 123 4567</a></p>
+        <p>Santo Domingo de los Tsáchilas, Ecuador</p>
+      </address>
+    </section>
+
+    <small>
+      <p>&copy; 2026 ShopEasy. Todos los derechos reservados.</p>
+    </small>
+  </footer>
+
+</body>
+</html>
