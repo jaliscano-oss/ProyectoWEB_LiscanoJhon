@@ -5,171 +5,237 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrito de compras - ShopEasy</title>
-    <link rel="icon" href="/img/icon/carrito-de-compras.png">
+    <link rel="icon" href="../img/icon/carrito-de-compras.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body>
+<body style="font-family: Arial, Helvetica, sans-serif; background-color: #f5f5f5; margin: 0; padding: 0;">
 
-    <!-- ── ENCABEZADO ──────────────────────────────────────── -->
-    <header style="text-align: center;">
-        <h1>ShopEasy</h1>
-        <p><em>Compra fácil, recibe rápido.</em></p>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li style="display: inline; margin: 0 10px;"><a href="../home.html">Inicio</a></li>
-                <li style="display: inline; margin: 0 10px;"><a href="../catalogo/catalogo.html">Catálogo</a></li>
-                <li style="display: inline; margin: 0 10px;"><a href="../login/login.html">Iniciar sesión</a></li>
-                <li style="display: inline; margin: 0 10px;"><a href="../registro/registro.html">Registrarse</a></li>
-                <li style="display: inline; margin: 0 10px;"><a href="#">Carrito (3)</a></li>
+    <!-- ── ENCABEZADO CON LOGO ──────────────────────────────────────── -->
+    <header style="background-color: white; padding: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <section style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+            <img src="../img/logoCarritoShopEasy.png" alt="Logo carrito ShopEasy" style="width: 50px; height: 50px;" />
+            <section>
+                <h1 style="margin: 0; font-size: 2.5em; color: #2c3e50;">ShopEasy</h1>
+                <p style="margin: 5px 0 0; font-style: italic; color: #666;"><em>Compra fácil, recibe rápido.</em></p>
+            </section>
+        </section>
+        <nav aria-label="Navegación principal" style="margin-top: 15px;">
+            <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="display: inline; margin: 0 15px;"><a href="../home.html"
+                        style="color: #2358a8; text-decoration: none; font-weight: bold;">Inicio</a></li>
+                <li style="display: inline; margin: 0 15px;"><a href="../catalogo/catalogo.html"
+                        style="color: #2358a8; text-decoration: none; font-weight: bold;">Catálogo</a></li>
+                <li style="display: inline; margin: 0 15px;"><a href="../login/login.html"
+                        style="color: #2358a8; text-decoration: none; font-weight: bold;">Iniciar sesión</a></li>
+                <li style="display: inline; margin: 0 15px;"><a href="../registro/registro.html"
+                        style="color: #2358a8; text-decoration: none; font-weight: bold;">Registrarse</a></li>
+                <li style="display: inline; margin: 0 15px;"><a href="carrito.html"
+                        style="color: #f76b1c; text-decoration: none; font-weight: bold;">Carrito (3)</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- ── CONTENIDO PRINCIPAL ─────────────────────────────── -->
-    <main>
-        <h2>Mi carrito de compras</h2>
-        <p>Tienes <strong>3 productos</strong> en tu carrito.</p>
+    <main style="max-width: 1200px; margin: 0 auto; padding: 30px 20px;">
 
-        <!-- ── LISTA DE PRODUCTOS EN EL CARRITO ──────────────── -->
-        <section aria-labelledby="titulo-carrito">
-            <h3 id="titulo-carrito">Productos seleccionados</h3>
+        <section
+            style="background-color: white; border-radius: 15px; padding: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.15);">
+            <h2 style="color: #2c3e50; margin-top: 0; border-bottom: 2px solid #f76b1c; padding-bottom: 10px;">Mi
+                carrito de compras</h2>
+            <p style="color: #666;">Tienes <strong style="color: #f76b1c;">3 productos</strong> en tu carrito.</p>
 
-            <form action="#checkout.html?id='pago'" method="post">
-                <!-- Producto 1 -->
-                <article>
-                    <h4><a href="#producto.html?id=501">Auriculares Bluetooth Pro</a></h4>
-                    <p>Categoría: <span>Electrónica</span></p>
-                    <p>Vendido por: <span>TechStore EC</span></p>
-                    <p>Precio unitario: <strong>$45.99</strong> <s>$57.99</s></p>
-                    <p>
-                        <label for="qty-501">Cantidad:</label>
-                        <input type="number" id="qty-501" name="cantidad_501" value="1" min="1" max="12" />
-                    </p>
-                    <p>Subtotal: <strong>$45.99</strong></p>
-                    <p>Disponibilidad: <strong>En stock</strong></p>
-                    <p><a href="../catalogo/catalogo.html">Eliminar producto</a></p>
-                </article>
-                <hr />
+            <!-- ── LISTA DE PRODUCTOS EN EL CARRITO ──────────────── -->
+            <section aria-labelledby="titulo-carrito">
+                <h3 id="titulo-carrito" style="color: #2c3e50;">Productos seleccionados</h3>
 
-                <!-- Producto 2 -->
-                <article>
-                    <h4><a href="#producto.html?id=503">Mochila Urban Slim 20L</a></h4>
-                    <p>Categoría: <span>Accesorios</span></p>
-                    <p>Vendido por: <span>BagsWorld</span></p>
-                    <p>Precio unitario: <strong>$34.50</strong></p>
-                    <p>
-                        <label for="qty-503">Cantidad:</label>
-                        <input type="number" id="qty-503" name="cantidad_503" value="2" min="1" max="10" />
-                    </p>
-                    <p>Subtotal: <strong>$69.00</strong></p>
-                    <p>Disponibilidad: <strong>En stock</strong></p>
-                    <p><a href="../catalogo/catalogo.html">Eliminar producto</a></p>
-                </article>
-                <hr />
+                <form action="../pago/pago.html" method="get" style="margin-top: 20px;">
 
-                <!-- Producto 3 -->
-                <article>
-                    <h4><a href="#producto.html?id=504">Smartwatch FitPro X2</a></h4>
-                    <p>Categoría: <span>Electrónica</span></p>
-                    <p>Vendido por: <span>TechStore EC</span></p>
-                    <p>Precio unitario: <strong>$79.99</strong></p>
-                    <p>
-                        <label for="qty-504">Cantidad:</label>
-                        <input type="number" id="qty-504" name="cantidad_504" value="1" min="1" max="3" />
-                    </p>
-                    <p>Subtotal: <strong>$79.99</strong></p>
-                    <p>Disponibilidad: <strong>Últimas 3 unidades</strong></p>
-                    <p><a href="../catalogo/catalogo.html">Eliminar producto</a></p>
-                </article>
-                <hr />
+                    <!-- Producto 1 -->
+                    <article
+                        style="border: 1px solid #ecf0f1; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+                        <h4 style="margin: 0 0 10px 0;"><a href="#producto.html?id=501"
+                                style="color: #2358a8; text-decoration: none;">Auriculares Bluetooth Pro</a></h4>
+                        <p style="margin: 5px 0;"><strong>Categoría:</strong> <span
+                                style="color: #666;">Electrónica</span></p>
+                        <p style="margin: 5px 0;"><strong>Vendido por:</strong> <span style="color: #666;">TechStore
+                                EC</span></p>
+                        <p style="margin: 5px 0;"><strong>Precio unitario:</strong> <strong
+                                style="color: #f76b1c;">$45.99</strong> <s style="color: #999;">$57.99</s></p>
+                        <p style="margin: 5px 0;">
+                            <label for="qty-501" style="font-weight: bold;">Cantidad:</label>
+                            <input type="number" id="qty-501" name="cantidad_501" value="1" min="1" max="12"
+                                style="width: 60px; padding: 5px; margin-left: 10px; border: 1px solid #ddd; border-radius: 5px;" />
+                        </p>
+                        <p style="margin: 5px 0;"><strong>Subtotal:</strong> <strong
+                                style="color: #f76b1c;">$45.99</strong></p>
+                        <p style="margin: 5px 0;"><strong>Disponibilidad:</strong> <strong style="color: #27ae60;">En
+                                stock</strong></p>
+                        <p style="margin: 10px 0 0 0;"><a href="#"
+                                onclick="return confirm('¿Eliminar Auriculares Bluetooth Pro del carrito?');"
+                                style="color: #e74c3c; text-decoration: none;">Eliminar producto</a></p>
+                    </article>
 
-                <!-- Cupón de descuento -->
-                <section aria-labelledby="titulo-cupon">
-                    <h3 id="titulo-cupon">Código de descuento</h3>
-                    <label for="cupon">¿Tienes un cupón?</label>
-                    <input type="text" id="cupon" name="cupon" placeholder="Ingresa tu código aquí" />
-                    <button type="button">Aplicar cupón</button>
-                </section>
-                <hr />
+                    <!-- Producto 2 -->
+                    <article
+                        style="border: 1px solid #ecf0f1; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+                        <h4 style="margin: 0 0 10px 0;"><a href="#producto.html?id=503"
+                                style="color: #2358a8; text-decoration: none;">Mochila Urban Slim 20L</a></h4>
+                        <p style="margin: 5px 0;"><strong>Categoría:</strong> <span
+                                style="color: #666;">Accesorios</span></p>
+                        <p style="margin: 5px 0;"><strong>Vendido por:</strong> <span
+                                style="color: #666;">BagsWorld</span></p>
+                        <p style="margin: 5px 0;"><strong>Precio unitario:</strong> <strong
+                                style="color: #f76b1c;">$34.50</strong></p>
+                        <p style="margin: 5px 0;">
+                            <label for="qty-503" style="font-weight: bold;">Cantidad:</label>
+                            <input type="number" id="qty-503" name="cantidad_503" value="2" min="1" max="10"
+                                style="width: 60px; padding: 5px; margin-left: 10px; border: 1px solid #ddd; border-radius: 5px;" />
+                        </p>
+                        <p style="margin: 5px 0;"><strong>Subtotal:</strong> <strong
+                                style="color: #f76b1c;">$69.00</strong></p>
+                        <p style="margin: 5px 0;"><strong>Disponibilidad:</strong> <strong style="color: #27ae60;">En
+                                stock</strong></p>
+                        <p style="margin: 10px 0 0 0;"><a href="#"
+                                onclick="return confirm('¿Eliminar Mochila Urban Slim del carrito?');"
+                                style="color: #e74c3c; text-decoration: none;">Eliminar producto</a></p>
+                    </article>
 
-                <!-- Resumen del pedido -->
-                <section aria-labelledby="titulo-resumen">
-                    <h3 id="titulo-resumen">Resumen del pedido</h3>
+                    <!-- Producto 3 -->
+                    <article
+                        style="border: 1px solid #ecf0f1; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+                        <h4 style="margin: 0 0 10px 0;"><a href="#producto.html?id=504"
+                                style="color: #2358a8; text-decoration: none;">Smartwatch FitPro X2</a></h4>
+                        <p style="margin: 5px 0;"><strong>Categoría:</strong> <span
+                                style="color: #666;">Electrónica</span></p>
+                        <p style="margin: 5px 0;"><strong>Vendido por:</strong> <span style="color: #666;">TechStore
+                                EC</span></p>
+                        <p style="margin: 5px 0;"><strong>Precio unitario:</strong> <strong
+                                style="color: #f76b1c;">$79.99</strong></p>
+                        <p style="margin: 5px 0;">
+                            <label for="qty-504" style="font-weight: bold;">Cantidad:</label>
+                            <input type="number" id="qty-504" name="cantidad_504" value="1" min="1" max="3"
+                                style="width: 60px; padding: 5px; margin-left: 10px; border: 1px solid #ddd; border-radius: 5px;" />
+                        </p>
+                        <p style="margin: 5px 0;"><strong>Subtotal:</strong> <strong
+                                style="color: #f76b1c;">$79.99</strong></p>
+                        <p style="margin: 5px 0;"><strong>Disponibilidad:</strong> <strong
+                                style="color: #e67e22;">Últimas 3 unidades</strong></p>
+                        <p style="margin: 10px 0 0 0;"><a href="#"
+                                onclick="return confirm('¿Eliminar Smartwatch FitPro X2 del carrito?');"
+                                style="color: #e74c3c; text-decoration: none;">Eliminar producto</a></p>
+                    </article>
 
-                    <table>
-                        <caption>Detalle de costos del carrito</caption>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Subtotal (3 artículos)</th>
-                                <td>$194.98</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Descuento aplicado</th>
-                                <td>− $12.00</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Costo de envío</th>
-                                <td>Gratis</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><strong>Total a pagar</strong></th>
-                                <td><strong>$182.98</strong></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <!-- Método de envío -->
-                    <fieldset>
-                        <legend>Método de envío</legend>
-                        <label>
-                            <input type="radio" name="envio" value="estandar" checked />
-                            Envío estándar (3–5 días hábiles) — Gratis
-                        </label>
+                    <!-- Cupón de descuento -->
+                    <section style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                        <h3 style="color: #2c3e50; margin-top: 0;">Código de descuento</h3>
+                        <label for="cupon" style="font-weight: bold;">¿Tienes un cupón?</label>
                         <br />
-                        <label>
-                            <input type="radio" name="envio" value="express" />
-                            Envío express (1–2 días hábiles) — $4.99
-                        </label>
-                        <br />
-                        <label>
-                            <input type="radio" name="envio" value="mismo-dia" />
-                            Envío mismo día (solo Santo Domingo) — $8.99
-                        </label>
-                    </fieldset>
+                        <input type="text" id="cupon" name="cupon" placeholder="Ingresa tu código aquí"
+                            style="width: 250px; padding: 10px; margin-top: 10px; border: 1px solid #ddd; border-radius: 5px;" />
+                        <button type="submit"
+                            style="padding: 10px 20px; background-color: #2358a8; color: white; border: none; border-radius: 5px; margin-left: 10px; cursor: pointer;">Aplicar
+                            cupón</button>
+                    </section>
 
-                    <!-- Opciones adicionales -->
-                    <fieldset>
-                        <legend>Opciones adicionales</legend>
-                        <label>
-                            <input type="checkbox" name="regalo" value="si" />
-                            Envolver como regalo (+$2.00)
-                        </label>
-                        <br />
-                        <label>
-                            <input type="checkbox" name="factura" value="si" />
-                            Necesito factura con datos de empresa
-                        </label>
-                    </fieldset>
-                </section>
-                <hr />
+                    <!-- Resumen del pedido -->
+                    <section style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                        <h3 style="color: #2c3e50; margin-top: 0;">Resumen del pedido</h3>
 
-                <button type="submit">Proceder al pago →</button>
-                <a href="../catalogo/catalogo.html">← Seguir comprando</a>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <caption style="text-align: left; margin-bottom: 10px; font-weight: bold;">Detalle de costos
+                                del carrito</caption>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid #ddd;">
+                                    <th scope="row" style="text-align: left; padding: 10px 0;">Subtotal (3 artículos)
+                                    </th>
+                                    <td style="text-align: right; padding: 10px 0;">$194.98</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #ddd;">
+                                    <th scope="row" style="text-align: left; padding: 10px 0;">Descuento aplicado</th>
+                                    <td style="text-align: right; padding: 10px 0; color: #27ae60;">- $12.00</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #ddd;">
+                                    <th scope="row" style="text-align: left; padding: 10px 0;">Costo de envío</th>
+                                    <td style="text-align: right; padding: 10px 0; color: #27ae60;">Gratis</td>
+                                </tr>
+                                <tr style="background-color: #e8f0fe;">
+                                    <th scope="row" style="text-align: left; padding: 15px 0; font-size: 1.2em;">
+                                        <strong>Total a pagar</strong>
+                                    </th>
+                                    <td style="text-align: right; padding: 15px 0; font-size: 1.2em;"><strong
+                                            style="color: #f76b1c;">$182.98</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-            </form>
+                        <!-- Método de envío -->
+                        <fieldset
+                            style="border: 2px solid #ecf0f1; border-radius: 10px; padding: 15px; margin: 20px 0;">
+                            <legend style="font-weight: bold; color: #2c3e50; padding: 0 10px;">Método de envío</legend>
+                            <label style="display: block; margin: 10px 0; cursor: pointer;">
+                                <input type="radio" name="envio" value="estandar" checked /> Envío estándar (3-5 días
+                                hábiles) — Gratis
+                            </label>
+                            <label style="display: block; margin: 10px 0; cursor: pointer;">
+                                <input type="radio" name="envio" value="express" /> Envío express (1-2 días hábiles) —
+                                $4.99
+                            </label>
+                            <label style="display: block; margin: 10px 0; cursor: pointer;">
+                                <input type="radio" name="envio" value="mismo-dia" /> Envío mismo día (solo Santo
+                                Domingo) — $8.99
+                            </label>
+                        </fieldset>
+
+                        <!-- Opciones adicionales -->
+                        <fieldset style="border: 2px solid #ecf0f1; border-radius: 10px; padding: 15px;">
+                            <legend style="font-weight: bold; color: #2c3e50; padding: 0 10px;">Opciones adicionales
+                            </legend>
+                            <label style="display: block; margin: 10px 0; cursor: pointer;">
+                                <input type="checkbox" name="regalo" value="si" /> Envolver como regalo (+$2.00)
+                            </label>
+                            <label style="display: block; margin: 10px 0; cursor: pointer;">
+                                <input type="checkbox" name="factura" value="si" /> Necesito factura con datos de
+                                empresa
+                            </label>
+                        </fieldset>
+                    </section>
+
+                    <!-- Botones de acción -->
+                    <section style="display: flex; gap: 15px; justify-content: space-between; margin-top: 20px;">
+                        <button type="submit" style="flex: 1; 
+                            padding: 15px; 
+                            background-color: #f76b1c; 
+                            color: white; 
+                            border: none; 
+                            border-radius: 8px; 
+                            font-size: 16px; 
+                            font-weight: bold; 
+                            cursor: pointer;">
+                            Proceder al pago →</button>
+                        <a href="../catalogo/catalogo.html"
+                            style="flex: 1; text-align: center; padding: 15px; background-color: #95a5a6; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">←
+                            Seguir comprando</a>
+                    </section>
+
+                </form>
+            </section>
         </section>
-
     </main>
 
     <!-- ── PIE DE PÁGINA ───────────────────────────────────── -->
-    <footer>
-        <p>&copy; 2026 ShopEasy. Todos los derechos reservados. Santo Domingo, Ecuador.</p>
+    <footer style="background-color: #2c3e50; color: white; text-align: center; padding: 25px; margin-top: 30px;">
+        <p style="margin: 0 0 10px 0;">&copy; 2026 ShopEasy. Todos los derechos reservados. Santo Domingo, Ecuador.</p>
         <nav aria-label="Navegación del pie de página">
-            <ul>
-                <li><a href="../home.html">Inicio</a></li>
-                <li><a href="../catalogo/catalogo.html">Catálogo</a></li>
-                <li><a href="../login/login.html">Iniciar sesión</a></li>
-                <li><a href="../registro/registro.html">Registrarse</a></li>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="display: inline; margin: 0 15px;"><a href="../home.html"
+                        style="color: #f76b1c; text-decoration: none;">Inicio</a></li>
+                <li style="display: inline; margin: 0 15px;"><a href="../catalogo/catalogo.html"
+                        style="color: #f76b1c; text-decoration: none;">Catálogo</a></li>
+                <li style="display: inline; margin: 0 15px;"><a href="../login/login.html"
+                        style="color: #f76b1c; text-decoration: none;">Iniciar sesión</a></li>
+                <li style="display: inline; margin: 0 15px;"><a href="../registro/registro.html"
+                        style="color: #f76b1c; text-decoration: none;">Registrarse</a></li>
             </ul>
         </nav>
     </footer>
