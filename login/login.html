@@ -7,18 +7,19 @@
   <title>Iniciar sesión - ShopEasy</title>
   <link rel="icon" href="/img/icon/carrito-de-compras.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/general.css">
 </head>
 
-<body style="font-family: Arial, Helvetica, sans-serif; background-color: #f5f5f5; margin: 0; padding: 0;">
+<body>
 
   <!-- ENCABEZADO CON LOGO -->
-  <header style="background-color: white; padding: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+  <header>
     <!-- Logo del carrito -->
-    <div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
-      <img src="../img/logoCarritoShopEasy.png" alt="Logo carrito ShopEasy" style="width: 50px; height: 50px;" />
+    <div>
+      <img src="../img/logoCarritoShopEasy.png" alt="Logo carrito ShopEasy"/>
       <div>
-        <h1 style="margin: 0; font-size: 2.5em; color: #2c3e50;">ShopEasy</h1>
-        <p style="margin: 5px 0 0; font-style: italic; color: #666;"><em>Compra fácil, recibe rápido.</em></p>
+        <h1>ShopEasy</h1>
+        <p><em>Compra fácil, recibe rápido.</em></p>
       </div>
     </div>
     <!-- <nav aria-label="Navegación principal" style="margin-top: 15px;">
@@ -40,98 +41,77 @@
   </header>
 
   <!-- CONTENIDO PRINCIPAL -->
-  <main style="display: flex; justify-content: center; align-items: center; min-height: 70vh; padding: 30px 20px;">
-    <section aria-labelledby="titulo-login"
-      style="background-color: white; max-width: 500px; width: 100%; margin: 0 auto; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.15);">
-
+  <main>
+    <section>
       <!-- Icono de carrito pequeño encima del formulario -->
-      <div class="logo-contenido" style="text-align: center;">
-        <img src="../img/logoCarritoShopEasy.png" alt="Logo carrito ShopEasy" style="width: 50px; height: 50px;" />
+      <div class="logo-contenido">
+        <img src="../img/logoCarritoShopEasy.png" alt="Logo carrito ShopEasy"/>
       </div>
 
-      <h2 id="titulo-login" style="color: #2c3e50; text-align: center; margin-top: 0; margin-bottom: 10px;">Iniciar
-        sesión</h2>
-      <p style="color: #666; text-align: center; margin-bottom: 25px;">Ingresa con tu cuenta ShopEasy para continuar.
-      </p>
+      <h2 id="titulo-login">Iniciar sesión</h2>
+      <p>Ingresa con tu cuenta ShopEasy para continuar.</p>
 
       <form action="../home.html" method="get" novalidate>
         <!-- Tipo de usuario -->
-        <fieldset style="border: 2px solid #ecf0f1; border-radius: 10px; padding: 15px; margin-bottom: 20px;">
-          <legend style="font-weight: bold; color: #2c3e50; padding: 0 10px;">Ingresar como</legend>
-          <label style="margin-right: 15px; cursor: pointer;">
-            <input type="radio" name="rol" value="comprador" checked style="margin-right: 5px;" />Comprador
+        <fieldset>
+          <legend>Ingresar como</legend>
+          <label>
+            <input type="radio" name="rol" value="comprador" checked/>Comprador
           </label>
-          <label style="margin-right: 15px; cursor: pointer;">
-            <input type="radio" name="rol" value="vendedor" style="margin-right: 5px;" />Vendedor
+          <label>
+            <input type="radio" name="rol" value="vendedor"/>Vendedor
           </label>
-          <label style="cursor: pointer;">
-            <input type="radio" name="rol" value="administrador" style="margin-right: 5px;" />Administrador
+          <label>
+            <input type="radio" name="rol" value="administrador"/>Administrador
           </label>
         </fieldset>
 
         <!-- Correo -->
-        <div style="margin-bottom: 20px;">
-          <label for="email"
-            style="display: block; font-weight: bold; color: #2c3e50; margin-bottom: 8px; text-align: left;">
-            Correo electrónico <abbr title="campo obligatorio" style="color: #e74c3c;">*</abbr>
+        <div>
+          <label for="email">Correo electrónico <abbr title="campo obligatorio">*</abbr>
           </label>
-          <input type="email" id="email" name="email" placeholder="tu@correo.com" autocomplete="email" required
-            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;" />
+          <input type="email" id="email" name="email" placeholder="tu@correo.com" autocomplete="email" required/>
         </div>
 
         <!-- Contraseña -->
-        <div style="margin-bottom: 20px;">
-          <label for="password"
-            style="display: block; font-weight: bold; color: #2c3e50; margin-bottom: 8px; text-align: left;">
-            Contraseña <abbr title="campo obligatorio" style="color: #e74c3c;">*</abbr>
+        <div>
+          <label for="password">Contraseña <abbr title="campo obligatorio">*</abbr>
           </label>
           <input type="password" id="password" name="password" placeholder="Tu contraseña"
-            autocomplete="current-password" required
-            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;" />
+            autocomplete="current-password" required/>
         </div>
 
         <!-- Recordar sesión -->
-        <div style="text-align: left; margin-bottom: 25px;">
-          <label style="cursor: pointer;">
-            <input type="checkbox" name="recordar" value="si" style="margin-right: 8px;" />Mantener sesión iniciada
+        <div>
+          <label>
+            <input type="checkbox" name="recordar" value="si"/>Mantener sesión iniciada
           </label>
         </div>
 
         <!-- Botones -->
-        <div style="display: flex; gap: 15px; justify-content: space-between;">
-          <button type="submit"
-            style="flex: 1; padding: 12px; background-color: #2358a8; color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background-color 0.3s;">
-            Iniciar sesión
-          </button>
-          <button type="reset"
-            style="flex: 1; padding: 12px; background-color: #95a5a6; color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer;">
-            Limpiar
-          </button>
+        <div>
+          <button type="submit">Iniciar sesión</button>
+          <button type="reset">Limpiar</button>
         </div>
       </form>
 
-      <hr style="margin: 25px 0; border: none; border-top: 1px solid #ecf0f1;" />
+      <hr/>
 
-      <div style="text-align: center;">
-        <p style="margin-bottom: 10px;"><a href="#" style="color: #2358a8; text-decoration: none;">¿Olvidaste tu
-            contraseña?</a></p>
-        <p style="margin: 0;">¿No tienes cuenta? <a href="../registro/registro.html"
-            style="color: #2358a8; text-decoration: none; font-weight: bold;">Regístrate gratis</a></p>
+      <div>
+        <p>¿Olvidaste tu contraseña?</a></p>
+        <p>¿No tienes cuenta? <a href="../registro/registro.html">Regístrate gratis</a></p>
       </div>
     </section>
   </main>
 
   <!-- PIE DE PÁGINA -->
-  <footer style="background-color: #2c3e50; color: white; text-align: center; padding: 25px; margin-top: 30px;">
+  <footer>
     <p>&copy; 2026 ShopEasy &reg; Todos los derechos reservados &trade;</p>
-    <nav aria-label="Navegación del pie de página">
-      <ul style="list-style: none; padding: 0; margin: 0;">
-        <li style="display: inline; margin: 0 15px;"><a href="../home.html"
-            style="color: #f76b1c; text-decoration: none;">Inicio</a></li>
-        <li style="display: inline; margin: 0 15px;"><a href="../catalogo/catalogo.html"
-            style="color: #f76b1c; text-decoration: none;">Catálogo</a></li>
-        <li style="display: inline; margin: 0 15px;"><a href="../registro/registro.html"
-            style="color: #f76b1c; text-decoration: none;">Registrarse</a></li>
+    <nav>
+      <ul>
+        <li><a href="../home.html">Inicio</a></li>
+        <li><a href="../catalogo/catalogo.html">Catálogo</a></li>
+        <li><a href="../registro/registro.html">Registrarse</a></li>
       </ul>
     </nav>
   </footer>

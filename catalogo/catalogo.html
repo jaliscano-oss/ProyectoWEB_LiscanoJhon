@@ -7,98 +7,82 @@
     <title>Catálogo - ShopEasy</title>
     <link rel="icon" href="/img/icon/carrito-de-compras.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/general.css">
 </head>
 
-<body style="font-family: Arial, sans-serif; background-color: #f5f5f5;">
+<body>
 
     <!-- ENCABEZADO / NAVEGACIÓN -->
-    <header style="background-color: white; padding: 20px; text-align: center;">
-        <h1 style="margin: 0; font-size: 2.5em;">ShopEasy</h1>
-        <p style="margin: 5px 0; font-style: italic; color: #666;"><em>Compra fácil, recibe rápido.</em></p>
+    <header>
+        <!-- Icono de carrito pequeño encima del formulario -->
+        <div class="logo-contenido">
+            <img src="../img/logoCarritoShopEasy.png" alt="Logo carrito ShopEasy" />
+        </div>
+        <h1>ShopEasy</h1>
+        <p><em>Compra fácil, recibe rápido.</em></p>
         <nav>
             <ul>
-                <li style="display: inline; margin: 0 10px;"><a href="../home.html"
-                        style="color: #2358a8; text-decoration: none; font-weight: bold;"><i
-                            class="fa-solid fa-house"></i> Inicio</a></li>
-                <li style="display: inline; margin: 0 10px;"><a href="../catalogo/catalogo.html"
-                        style="color: #f76b1c; text-decoration: none; font-weight: bold;"><i
-                            class="fa-solid fa-box"></i> Catálogo</a></li>
-                <li style="display: inline; margin: 0 10px;"><a href="../login/login.html"
-                        style="color: #2358a8; text-decoration: none; font-weight: bold; "><i
-                            class="fa-solid fa-right-to-bracket"></i> Iniciar sesión</a></li>
-                <li style="display: inline; margin: 0 10px;"><a href="../registro/registro.html"
-                        style="color: #2358a8; text-decoration: none; font-weight: bold" ;><i
-                            class="fa-solid fa-building-user"></i> Registrarse</a></li>
-                <li style="display: inline; margin: 0 10px;"><a href="../carrito/carrito.html"
-                        style="color: #2358a8; text-decoration: none; font-weight: bold;"><i
-                            class="fa-solid fa-cart-shopping"></i> Carrito (3)</a></li>
+                <li><a href="../home.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                <li><a href="../catalogo/catalogo.html"><i class="fa-solid fa-box"></i> Catálogo</a></li>
+                <li><a href="../login/login.html"><i class="fa-solid fa-right-to-bracket"></i> Iniciar sesión</a></li>
+                <li><a href="../registro/registro.html"><i class="fa-solid fa-building-user"></i> Registrarse</a></li>
+                <li><a href="../carrito/carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito (3)</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Barra de búsqueda -->
-    <div class="barra-busqueda" style="margin-top: 15px; text-align: center; border-bottom: 2px solid #bdc3c7;">
-        <form action="../catalogo/catalogo.html" method="get" style="display:flex; gap:5px;">
-            <input type="search" name="q" placeholder="Buscar productos, marcas y más..."
-                style="padding: 10px; width: 300px; border: 1px solid #ccc; border-radius: 5px;" />
-            <button type="submit"
-                style="padding: 10px 20px; background-color: #2358a8; color: white; border: none; border-radius: 5px; cursor: pointer;">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                Buscar</button>
+    <div class="barra-busqueda">
+        <form action="../catalogo/catalogo.html" method="get">
+            <input type="search" name="q" placeholder="Buscar productos, marcas y más..." />
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i>Buscar</button>
         </form>
     </div>
 
-    <div class="catalogo-layout" style="display: flex; gap: 20px; padding: 20px; max-width: 1400px; margin: 0 auto;">
+    <div class="catalogo-layout">
         <!-- Sidebar filtros -->
-        <aside class="sidebar"
-            style="width: 280px; background-color: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-            <h2 style="color: #2c3e50; border-bottom: 2px solid #f76b1c; padding-bottom: 5px;">Filtros</h2>
+        <aside class="sidebar">
+            <h2>Filtros</h2>
             <form action="../catalogo/catalogo.html" method="get">
 
-                <div class="filtro-grupo" style="margin-bottom: 20px;">
-                    <h3 style="color: #34495e; margin-bottom: 10px;">Categoría</h3>
-                    <label style="display: block; margin: 5px 0;"><input type="checkbox" name="cat" value="electronica"
-                            checked /> Electrónica</label>
-                    <label style="display: block; margin: 5px 0;"><input type="checkbox" name="cat" value="ropa" /> Ropa
+                <div class="filtro-grupo">
+                    <h3>Categoría</h3>
+                    <label><input type="checkbox" name="cat" value="electronica" checked /> Electrónica</label>
+                    <label><input type="checkbox" name="cat" value="ropa" /> Ropa
                         y Moda</label>
-                    <label style="display: block; margin: 5px 0;"><input type="checkbox" name="cat" value="hogar" />
+                    <label><input type="checkbox" name="cat" value="hogar" />
                         Hogar</label>
-                    <label style="display: block; margin: 5px 0;"><input type="checkbox" name="cat" value="deportes" />
+                    <label><input type="checkbox" name="cat" value="deportes" />
                         Deportes</label>
-                    <label style="display: block; margin: 5px 0;"><input type="checkbox" name="cat" value="libros" />
+                    <label><input type="checkbox" name="cat" value="libros" />
                         Libros</label>
-                    <label style="display: block; margin: 5px 0;"><input type="checkbox" name="cat" value="juguetes" />
+                    <label><input type="checkbox" name="cat" value="juguetes" />
                         Juguetes</label>
                 </div>
 
-                <div class="filtro-grupo" style="margin-bottom: 20px;">
-                    <h3 style="color: #34495e; margin-bottom: 10px;">Calificación</h3>
-                    <label style="display: block; margin: 5px 0;"><input type="radio" name="stars" value="5" /> ★★★★★ 5
+                <div class="filtro-grupo">
+                    <h3>Calificación</h3>
+                    <label><input type="radio" name="stars" value="5" /> ★★★★★ 5
                         estrellas</label>
-                    <label style="display: block; margin: 5px 0;"><input type="radio" name="stars" value="4" checked />
+                    <label><input type="radio" name="stars" value="4" checked />
                         ★★★★☆ 4 o más</label>
-                    <label style="display: block; margin: 5px 0;"><input type="radio" name="stars" value="3" /> ★★★☆☆ 3
+                    <label><input type="radio" name="stars" value="3" /> ★★★☆☆ 3
                         o más</label>
                 </div>
 
-                <div class="filtro-grupo" style="margin-bottom: 20px;">
-                    <h3 style="color: #34495e; margin-bottom: 10px;">Precio ($)</h3>
-                    <label for="min" style="display: block; margin: 5px 0;">Mínimo</label>
-                    <input type="number" id="min" name="min" placeholder="0" min="0"
-                        style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;" />
-                    <label for="max" style="display: block; margin: 5px 0;">Máximo</label>
-                    <input type="number" id="max" name="max" placeholder="1000" min="0"
-                        style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;" />
+                <div class="filtro-grupo">
+                    <h3>Precio ($)</h3>
+                    <label for="min">Mínimo</label>
+                    <input type="number" id="min" name="min" placeholder="0" min="0" />
+                    <label for="max">Máximo</label>
+                    <input type="number" id="max" name="max" placeholder="1000" min="0" />
                 </div>
 
-                <div class="filtro-grupo" style="margin-bottom: 20px;">
-                    <h3 style="color: #34495e; margin-bottom: 10px;">Disponibilidad</h3>
-                    <label style="display: block; margin: 5px 0;">
-                        <input type="checkbox" name="stock" value="disponible" checked style="margin-right: 8px;" />
-                        Solo en stock</label>
-                    <label style="display: block; margin: 5px 0;">
-                        <input type="checkbox" name="envio" value="gratis" style="margin-right: 8px;" /> Envío
-                        gratis</label>
+                <div class="filtro-grupo">
+                    <h3>Disponibilidad</h3>
+                    <label><input type="checkbox" name="stock" value="disponible" checked />Solo en stock</label>
+                    <label>
+                        <input type="checkbox" name="envio" value="gratis" /> Envío gratis</label>
                 </div>
 
                 <div class="filtro-grupo" style="margin-bottom: 20px;">
@@ -112,30 +96,21 @@
                     </select>
                 </div>
 
-                <button type="submit" class="btn-filtro"
-                    style="width: 100%; padding: 10px; background-color: #f76b1c; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; margin-bottom: 10px;">Aplicar
-                    filtros</button>
-                <button type="reset" class="btn-limpiar"
-                    style="width: 100%; padding: 10px; background-color: #95a5a6; color: white; border: none; border-radius: 5px; cursor: pointer;">Limpiar</button>
+                <button type="submit" class="btn-filtro">Aplicar filtros</button>
+                <button type="reset" class="btn-limpiar">Limpiar</button>
             </form>
         </aside>
 
         <!-- Productos -->
-        <section class="catalogo-main" style="flex: 1;">
-            <div class="catalogo-barra"
-                style="background-color: white; padding: 10px 15px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                <p style="margin: 0; color: #555;">Mostrando <strong>6 de 124</strong> productos en
-                    <strong>Electrónica</strong>
-                </p>
-
+        <section class="catalogo-main">
+            <div class="catalogo-barra">
+                <p>Mostrando <strong>6 de 124</strong> productos en<strong>Electrónica</strong></p>
             </div>
 
-            <div class="tabla-wrap" style="overflow-x: auto;">
-                <table border="0" cellpadding="12" cellspacing="0"
-                    style="width: 100%; background-color: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-collapse: collapse;">
-                    <caption style="text-align: left; margin-bottom: 10px; font-weight: bold; color: #2c3e50;">Lista de
-                        productos disponibles en ShopEasy</caption>
-                    <thead style="background-color: #34495e; color: white;">
+            <div class="tabla-wrap">
+                <table>
+                    <caption>Lista de productos disponibles en ShopEasy</caption>
+                    <thead>
                         <tr>
                             <th>Producto</th>
                             <th>Categoría</th>
@@ -148,127 +123,98 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="border-bottom: 1px solid #ddd;">
+                        <tr>
                             <td><a href="#producto.html?id=501">Auriculares Bluetooth Pro</a></td>
                             <td>Electrónica</td>
                             <td><strong>$45.99</strong></td>
                             <td><s>$57.99</s></td>
                             <td>20%</td>
                             <td>★★★★☆ (128)</td>
-                            <td><span class="badge badge-verde"
-                                    style="background-color: #2ecc71; color: white; padding: 4px 8px; border-radius: 12px;">Disponible</span>
+                            <td><span class="badge badge-verde">
                             </td>
                             <td>
-                                <a href="#producto.html?id=501" class="btn-ver"
-                                    style="background-color: #3498db; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-right: 5px;">Ver</a>
-                                <a href="#carrito.html?agregar=501" class="btn-agregar"
-                                    style="background-color: #f76b1c; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none;">🛒
-                                    Agregar</a>
+                                <a href="#producto.html?id=501" class="btn-ver">Ver</a>
+                                <a href="#carrito.html?agregar=501" class="btn-agregar">🛒 Agregar</a>
                             </td>
                         </tr>
-                        <tr style="border-bottom: 1px solid #ddd;">
+                        <tr>
                             <td><a href="#producto.html?id=502">Zapatillas Running Lite</a></td>
                             <td>Deportes</td>
                             <td><strong>$89.00</strong></td>
                             <td>—</td>
                             <td>—</td>
                             <td>★★★★★ (64)</td>
-                            <td><span class="badge badge-verde"
-                                    style="background-color: #2ecc71; color: white; padding: 4px 8px; border-radius: 12px;">Disponible</span>
+                            <td><span class="badge badge-verde">Disponible</span>
                             </td>
                             <td>
-                                <a href="#producto.html?id=502" class="btn-ver"
-                                    style="background-color: #3498db; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-right: 5px;">Ver</a>
-                                <a href="#carrito.html?agregar=502" class="btn-agregar"
-                                    style="background-color: #f76b1c; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none;">🛒
-                                    Agregar</a>
+                                <a href="#producto.html?id=502" class="btn-ver">Ver</a>
+                                <a href="#carrito.html?agregar=502" class="btn-agregar">🛒 Agregar</a>
                             </td>
                         </tr>
-                        <tr style="border-bottom: 1px solid #ddd;">
+                        <tr>
                             <td><a href="#producto.html?id=503">Mochila Urban Slim 20L</a></td>
                             <td>Accesorios</td>
                             <td><strong>$34.50</strong></td>
                             <td>—</td>
                             <td>—</td>
                             <td>★★★★☆ (41)</td>
-                            <td><span class="badge badge-verde"
-                                    style="background-color: #2ecc71; color: white; padding: 4px 8px; border-radius: 12px;">Disponible</span>
+                            <td><span class="badge badge-verde">Disponible</span>
                             </td>
                             <td>
-                                <a href="#producto.html?id=503" class="btn-ver"
-                                    style="background-color: #3498db; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-right: 5px;">Ver</a>
-                                <a href="#carrito.html?agregar=503" class="btn-agregar"
-                                    style="background-color: #f76b1c; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none;">🛒
-                                    Agregar</a>
+                                <a href="#producto.html?id=503" class="btn-ver">Ver</a>
+                                <a href="#carrito.html?agregar=503" class="btn-agregar">🛒 Agregar</a>
                             </td>
                         </tr>
-                        <tr style="border-bottom: 1px solid #ddd;">
+                        <tr>
                             <td><a href="#producto.html?id=504">Smartwatch FitPro X2</a></td>
                             <td>Electrónica</td>
                             <td><strong>$79.99</strong></td>
                             <td><s>$122.99</s></td>
                             <td>35%</td>
                             <td>★★★★☆ (89)</td>
-                            <td><span class="badge badge-amarillo"
-                                    style="background-color: #f39c12; color: white; padding: 4px 8px; border-radius: 12px;">Últimas
-                                    3</span></td>
+                            <td><span class="badge badge-amarillo">Últimas 3</span></td>
                             <td>
-                                <a href="#producto.html?id=504" class="btn-ver"
-                                    style="background-color: #3498db; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-right: 5px;">Ver</a>
-                                <a href="#carrito.html?agregar=504" class="btn-agregar"
-                                    style="background-color: #f76b1c; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none;">🛒
-                                    Agregar</a>
+                                <a href="#producto.html?id=504" class="btn-ver">Ver</a>
+                                <a href="#carrito.html?agregar=504" class="btn-agregar">🛒 Agregar</a>
                             </td>
                         </tr>
-                        <tr style="border-bottom: 1px solid #ddd;">
+                        <tr>
                             <td><a href="#producto.html?id=505">Laptop UltraBook 15"</a></td>
                             <td>Electrónica</td>
                             <td><strong>$649.99</strong></td>
                             <td><s>$899.99</s></td>
                             <td>28%</td>
                             <td>★★★★★ (210)</td>
-                            <td><span class="badge badge-verde"
-                                    style="background-color: #2ecc71; color: white; padding: 4px 8px; border-radius: 12px;">Disponible</span>
+                            <td><span class="badge badge-verde">Disponible</span>
                             </td>
                             <td>
-                                <a href="#producto.html?id=505" class="btn-ver"
-                                    style="background-color: #3498db; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-right: 5px;">Ver</a>
-                                <a href="#carrito.html?agregar=505" class="btn-agregar"
-                                    style="background-color: #f76b1c; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none;">🛒
-                                    Agregar</a>
+                                <a href="#producto.html?id=505" class="btn-ver">Ver</a>
+                                <a href="#carrito.html?agregar=505" class="btn-agregar">🛒 Agregar</a>
                             </td>
                         </tr>
-                        <tr style="border-bottom: 1px solid #ddd;">
+                        <tr>
                             <td><a href="#producto.html?id=506">Control Gaming Inalámbrico</a></td>
                             <td>Electrónica</td>
                             <td><strong>$39.99</strong></td>
                             <td><s>$60.00</s></td>
                             <td>33%</td>
                             <td>★★★★☆ (45)</td>
-                            <td><span class="badge badge-rojo"
-                                    style="background-color: #e74c3c; color: white; padding: 4px 8px; border-radius: 12px;">Agotado</span>
+                            <td><span class="badge badge-rojo">Agotado</span>
                             </td>
                             <td>
-                                <a href="#producto.html?id=506" class="btn-ver"
-                                    style="background-color: #3498db; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-right: 5px;">Ver</a>
+                                <a href="#producto.html?id=506" class="btn-ver">Ver</a>
                             </td>
                         </tr>
                     </tbody>
                     <tfoot>
-                        <tr style="border-bottom: 1px solid #ddd;">
+                        <tr>
                             <td colspan="8">
                                 Página:
-                                <a href="#"
-                                    style="margin: 0 5px; padding: 5px 10px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px;">1</a>
-                                <a href="#"
-                                    style="margin: 0 5px; padding: 5px 10px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px;">2</a>
-                                <a href="#"
-                                    style="margin: 0 5px; padding: 5px 10px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px;">3</a>
-                                <a href="#"
-                                    style="margin: 0 5px; padding: 5px 10px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px;">…</a>
-                                <a href="#"
-                                    style="margin: 0 5px; padding: 5px 10px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px;">Siguiente
-                                    →</a>
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">…</a>
+                                <a href="#">Siguiente →</a>
                             </td>
                         </tr>
                     </tfoot>
@@ -277,19 +223,15 @@
         </section>
     </div>
 
-    <footer style="background-color: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 20px;">
+    <footer>
         <p>&copy; 2026 ShopEasy &reg; Todos los derechos reservados &trade;</p>
-        <hr style="border-color: #e67e22; width: 50px;">
-        <nav style="margin-bottom: 10px;">
-            <ul style="list-style: none; padding: 0; margin: 0;">
-                <li style="display: inline; margin: 0 15px;"><a href="../home.html"
-                        style="color: #e67e22; text-decoration: none;">Inicio</a></li>
-                <li style="display: inline; margin: 0 15px;"><a href="../login/login.html"
-                        style="color: #e67e22; text-decoration: none;">Iniciar sesión</a></li>
-                <li style="display: inline; margin: 0 15px;"><a href="../registro/registro.html"
-                        style="color: #e67e22; text-decoration: none;">Registrarse</a></li>
-                <li style="display: inline; margin: 0 15px;"><a href="../carrito/carrito.html"
-                        style="color: #e67e22; text-decoration: none;">Carrito</a></li>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="../home.html">Inicio</a></li>
+                <li><a href="../login/login.html">Iniciar sesión</a></li>
+                <li><a href="../registro/registro.html">Registrarse</a></li>
+                <li><a href="../carrito/carrito.html">Carrito</a></li>
             </ul>
         </nav>
     </footer>

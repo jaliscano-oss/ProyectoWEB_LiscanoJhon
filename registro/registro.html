@@ -7,18 +7,19 @@
     <title>Registro - ShopEasy</title>
     <link rel="icon" href="/img/icon/carrito-de-compras.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/general.css">
 </head>
 
-<body style="font-family: Arial, Helvetica, sans-serif; background-color: #f5f5f5; margin: 0; padding: 0;">
+<body>
 
     <!-- ENCABEZADO CON LOGO -->
-    <header style="background-color: white; padding: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <header>
         <!-- Logo del carrito -->
-        <div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
-            <img src="../img/logoCarritoShopEasy.png" alt="Logo carrito ShopEasy" style="width: 50px; height: 50px;" />
+        <div>
+            <img src="../img/logoCarritoShopEasy.png" alt="Logo carrito ShopEasy" />
             <div>
-                <h1 style="margin: 0; font-size: 2.5em; color: #2c3e50;">ShopEasy</h1>
-                <p style="margin: 5px 0 0; font-style: italic; color: #666;"><em>Compra fácil, recibe rápido.</em></p>
+                <h1>ShopEasy</h1>
+                <p><em>Compra fácil, recibe rápido.</em></p>
             </div>
         </div>
         <!-- <nav aria-label="Navegación principal" style="margin-top: 15px;">
@@ -40,212 +41,165 @@
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
-    <main style="display: flex; justify-content: center; align-items: center; padding: 40px 20px;">
-        <section aria-labelledby="titulo-registro"
-            style="background-color: white; max-width: 700px; width: 100%; margin: 0 auto; padding: 35px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.15);">
+    <main>
+        <section>
 
             <!-- Logo pequeño encima del título -->
-            <div style="text-align: center; margin-bottom: 15px;">
-                <img src="../img/logoCarritoShopEasy.png" alt="Logo carrito ShopEasy"
-                    style="width: 50px; height: 50px;" />
+            <div>
+                <img src="../img/logoCarritoShopEasy.png" alt="Logo carrito ShopEasy" />
             </div>
 
-            <h2 id="titulo-registro" style="color: #2c3e50; text-align: center; margin-top: 0; margin-bottom: 10px;">
-                Crear cuenta nueva</h2>
-            <p style="color: #666; text-align: center; margin-bottom: 30px;">Completa el formulario para unirte a
-                ShopEasy.</p>
+            <h2>Crear cuenta nueva</h2>
+            <p>Completa el formulario para unirte a ShopEasy.</p>
 
             <form action="../login/login.html" method="get" novalidate>
 
                 <!-- Tipo de cuenta -->
-                <fieldset style="border: 2px solid #ecf0f1; border-radius: 10px; padding: 20px; margin-bottom: 25px;">
-                    <legend style="font-weight: bold; color: #2c3e50; padding: 0 10px;">Tipo de cuenta</legend>
-                    <label style="display: inline-block; margin-right: 20px; cursor: pointer;">
-                        <input type="radio" name="tipo" value="comprador" checked style="margin-right: 5px;" />
-                        Comprador – Quiero comprar productos
-                    </label>
-                    <label style="display: inline-block; cursor: pointer;">
-                        <input type="radio" name="tipo" value="vendedor" style="margin-right: 5px;" />
-                        Vendedor – Quiero vender productos
-                    </label>
+                <fieldset>
+                    <legend>Tipo de cuenta</legend>
+                    <label><input type="radio" name="tipo" value="comprador" checked />Comprador - Quiero comprar
+                        productos</label>
+                    <label><input type="radio" name="tipo" value="vendedor" />Vendedor - Quiero vender productos</label>
                 </fieldset>
 
                 <!-- Datos personales -->
-                <fieldset style="border: 2px solid #ecf0f1; border-radius: 10px; padding: 20px; margin-bottom: 25px;">
-                    <legend style="font-weight: bold; color: #2c3e50; padding: 0 10px;">Datos personales</legend>
+                <fieldset>
+                    <legend">Datos personales</legend>
 
-                    <div style="display: flex; gap: 20px; margin-bottom: 20px;">
-                        <div style="flex: 1;">
-                            <label for="nombre"
-                                style="display: block; font-weight: bold; color: #2c3e50; margin-bottom: 8px;">
-                                Nombre <abbr style="color: #e74c3c;" title="campo obligatorio">*</abbr>
+                        <div>
+                            <div>
+                                <label for="nombre">Nombre <abbr title="campo obligatorio">*</abbr>
+                                </label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre"
+                                    autocomplete="given-name" required />
+                            </div>
+                            <div>
+                                <label for="apellido">Apellido <abbr title="campo obligatorio">*</abbr>
+                                </label>
+                                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido"
+                                    autocomplete="family-name" required />
+                            </div>
+                        </div>
+
+                        <!-- Fecha de nacimiento -->
+                        <div>
+                            <label for="fecha_nacimiento">Fecha de nacimiento <abbr title="campo obligatorio">*</abbr>
                             </label>
-                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre"
-                                autocomplete="given-name" required
-                                style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;" />
+                            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required />
                         </div>
-                        <div style="flex: 1;">
-                            <label for="apellido"
-                                style="display: block; font-weight: bold; color: #2c3e50; margin-bottom: 8px;">
-                                Apellido <abbr style="color: #e74c3c;" title="campo obligatorio">*</abbr>
-                            </label>
-                            <input type="text" id="apellido" name="apellido" placeholder="Tu apellido"
-                                autocomplete="family-name" required
-                                style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;" />
-                        </div>
-                    </div>
 
-                    <!-- Fecha de nacimiento -->
-                    <div style="margin-bottom: 20px;">
-                        <label for="fecha_nacimiento"
-                            style="display: block; font-weight: bold; color: #2c3e50; margin-bottom: 8px;">
-                            Fecha de nacimiento <abbr style="color: #e74c3c;" title="campo obligatorio">*</abbr>
-                        </label>
-                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required
-                            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;" />
-                    </div>
-
-                    <div style="display: flex; gap: 20px; margin-bottom: 20px;">
-                        <div style="flex: 1;">
-                            <label for="genero"
-                                style="display: block; font-weight: bold; color: #2c3e50; margin-bottom: 8px;">Género</label>
-                            <select id="genero" name="genero"
-                                style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
-                                <option value="">-- Seleccionar --</option>
-                                <option value="masculino">Masculino</option>
-                                <option value="femenino">Femenino</option>
-                                <option value="otro">Otro</option>
-                                <option value="prefiero-no-decir">Prefiero no decir</option>
-                            </select>
+                        <div>
+                            <div>
+                                <label for="genero">Género</label>
+                                <select id="genero" name="genero">
+                                    <option value="">-- Seleccionar --</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="femenino">Femenino</option>
+                                    <option value="otro">Otro</option>
+                                    <option value="prefiero-no-decir">Prefiero no decir</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="pais">País <abbr title="campo obligatorio">*</abbr>
+                                </label>
+                                <select id="pais" name="pais" required>
+                                    <option value="">-- Seleccionar país --</option>
+                                    <option value="ec" selected>Ecuador</option>
+                                    <option value="co">Colombia</option>
+                                    <option value="pe">Perú</option>
+                                    <option value="mx">México</option>
+                                    <option value="ar">Argentina</option>
+                                    <option value="cl">Chile</option>
+                                </select>
+                            </div>
                         </div>
-                        <div style="flex: 1;">
-                            <label for="pais"
-                                style="display: block; font-weight: bold; color: #2c3e50; margin-bottom: 8px;">
-                                País <abbr style="color: #e74c3c;" title="campo obligatorio">*</abbr>
-                            </label>
-                            <select id="pais" name="pais" required
-                                style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
-                                <option value="">-- Seleccionar país --</option>
-                                <option value="ec" selected>Ecuador</option>
-                                <option value="co">Colombia</option>
-                                <option value="pe">Perú</option>
-                                <option value="mx">México</option>
-                                <option value="ar">Argentina</option>
-                                <option value="cl">Chile</option>
-                            </select>
-                        </div>
-                    </div>
 
-                    <div>
-                        <label for="telefono"
-                            style="display: block; font-weight: bold; color: #2c3e50; margin-bottom: 8px;">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="+593 99 000 0000"
-                            autocomplete="tel"
-                            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;" />
-                    </div>
+                        <div>
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+593 99 000 0000"
+                                autocomplete="tel" />
+                        </div>
                 </fieldset>
 
                 <!-- Datos de acceso -->
-                <fieldset style="border: 2px solid #ecf0f1; border-radius: 10px; padding: 20px; margin-bottom: 25px;">
-                    <legend style="font-weight: bold; color: #2c3e50; padding: 0 10px;">Datos de acceso</legend>
+                <fieldset>
+                    <legend>Datos de acceso</legend>
 
-                    <div style="margin-bottom: 20px;">
-                        <label for="email"
-                            style="display: block; font-weight: bold; color: #2c3e50; margin-bottom: 8px;">
-                            Correo electrónico <abbr style="color: #e74c3c;" title="campo obligatorio">*</abbr>
+                    <div>
+                        <label for="email">Correo electrónico <abbr title="campo obligatorio">*</abbr>
                         </label>
                         <input type="email" id="email" name="email" placeholder="tu@correo.com" autocomplete="email"
-                            required
-                            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;" />
-                    </div>
-
-                    <div style="margin-bottom: 20px;">
-                        <label for="password"
-                            style="display: block; font-weight: bold; color: #2c3e50; margin-bottom: 8px;">
-                            Contraseña <abbr style="color: #e74c3c;" title="campo obligatorio">*</abbr>
-                        </label>
-                        <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres"
-                            autocomplete="new-password" minlength="8" required
-                            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;" />
-                        <small style="color: #666; display: block; margin-top: 5px;">Usa letras, números y símbolos para
-                            mayor seguridad.</small>
+                            required />
                     </div>
 
                     <div>
-                        <label for="password2"
-                            style="display: block; font-weight: bold; color: #2c3e50; margin-bottom: 8px;">
-                            Confirmar contraseña <abbr style="color: #e74c3c;" title="campo obligatorio">*</abbr>
+                        <label for="password">
+                            Contraseña <abbr title="campo obligatorio">*</abbr>
+                        </label>
+                        <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres"
+                            autocomplete="new-password" minlength="8" required />
+                        <small>Usa letras, números y símbolos para mayor seguridad.</small>
+                    </div>
+
+                    <div>
+                        <label for="password2">Confirmar contraseña <abbr title="campo obligatorio">*</abbr>
                         </label>
                         <input type="password" id="password2" name="password2" placeholder="Repite tu contraseña"
-                            autocomplete="new-password" required
-                            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; box-sizing: border-box;" />
+                            autocomplete="new-password" required />
                     </div>
                 </fieldset>
 
                 <!-- Preferencias y términos -->
-                <fieldset style="border: 2px solid #ecf0f1; border-radius: 10px; padding: 20px; margin-bottom: 25px;">
-                    <legend style="font-weight: bold; color: #2c3e50; padding: 0 10px;">Preferencias y condiciones
-                    </legend>
+                <fieldset>
+                    <legend>Preferencias y condiciones</legend>
 
-                    <div style="margin-bottom: 15px;">
-                        <label style="cursor: pointer;">
-                            <input type="checkbox" name="newsletter" value="si" style="margin-right: 8px;" />
+                    <div>
+                        <label>
+                            <input type="checkbox" name="newsletter" value="si" />
                             Quiero recibir ofertas y novedades por correo electrónico.
                         </label>
                     </div>
 
-                    <div style="margin-bottom: 15px;">
-                        <label style="cursor: pointer;">
-                            <input type="checkbox" name="notificaciones" value="si" style="margin-right: 8px;" />
+                    <div>
+                        <label>
+                            <input type="checkbox" name="notificaciones" value="si" />
                             Activar notificaciones de mis pedidos.
                         </label>
                     </div>
 
                     <div>
-                        <label style="cursor: pointer;">
-                            <input type="checkbox" name="terminos" value="acepto" required style="margin-right: 8px;" />
-                            He leído y acepto los <a href="#" style="color: #f76b1c; text-decoration: none;">Términos y
-                                condiciones</a> y la <a href="#" style="color: #f76b1c; text-decoration: none;">Política
-                                de privacidad</a>.
-                            <abbr style="color: #e74c3c;" title="campo obligatorio">*</abbr>
+                        <label>
+                            <input type="checkbox" name="terminos" value="acepto" required />He leído y acepto los
+                            <a href="#">Términos y condiciones</a>y la
+                            <a href="#">Política de privacidad</a>.
+                            <abbr title="campo obligatorio">*</abbr>
                         </label>
                     </div>
                 </fieldset>
 
                 <!-- Botones -->
-                <div style="display: flex; gap: 15px; justify-content: space-between; margin-top: 25px;">
-                    <button type="submit"
-                        style="flex: 1; padding: 14px; background-color: #2358a8; color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer;">
-                        Crear cuenta gratis
-                    </button>
-                    <button type="reset"
-                        style="flex: 1; padding: 14px; background-color: #95a5a6; color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer;">
-                        Limpiar formulario
-                    </button>
+                <div>
+                    <button type="submit Crear ">cuenta gratis</button>
+                    <button type="reset">Limpiar formulario</button>
                 </div>
 
             </form>
 
-            <p style="text-align: center; margin-top: 25px;">¿Ya tienes una cuenta? <a href="../login/login.html"
-                    style="color: #2358a8; text-decoration: none; font-weight: bold;">Inicia sesión aquí</a></p>
+            <p>¿Ya tienes una cuenta? <a href="../login/login.html">Inicia sesión aquí</a></p>
         </section>
     </main>
 
     <!-- PIE DE PÁGINA -->
-    <footer style="background-color: #2c3e50; color: white; text-align: center; padding: 25px; margin-top: 20px;">
+    <footer>
         <p>&copy; 2026 ShopEasy &reg; Todos los derechos reservados &trade;</p>
-        <nav aria-label="Navegación del pie de página">
-            <ul style="list-style: none; padding: 0; margin: 0;">
-                <li style="display: inline; margin: 0 15px;"><a href="../home.html"
-                        style="color: #f76b1c; text-decoration: none;">Inicio</a></li>
-                <li style="display: inline; margin: 0 15px;"><a href="../catalogo/catalogo.html"
-                        style="color: #f76b1c; text-decoration: none;">Catálogo</a></li>
-                <li style="display: inline; margin: 0 15px;"><a href="../login/login.html"
-                        style="color: #f76b1c; text-decoration: none;">Iniciar sesión</a></li>
+        <nav>
+            <ul>
+                <li><a href="../home.html">Inicio</a></li>
+                <li><a href="../catalogo/catalogo.html">Catálogo</a></li>
+                <li><a href="../login/login.html">Iniciar sesión</a></li>
             </ul>
         </nav>
     </footer>
-
 </body>
 
 </html>

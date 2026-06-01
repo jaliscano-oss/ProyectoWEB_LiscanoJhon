@@ -7,209 +7,161 @@
   <title>ShopEasy - Página de Inicio</title>
   <link rel="icon" href="/img/icon/carrito-de-compras.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/general.css">
 </head>
 
-<body style="font-family: Arial, Helvetica, sans-serif; background-color: #f5f5f5;">
+<body>
 
   <!-- ENCABEZADO / NAVEGACIÓN -->
-  <header style="text-align: center; background-color: white; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-    <h1 style="color: #1a3c6e; margin: 0 0 5px 0;">ShopEasy</h1>
-    <p style="font-family: Arial, Helvetica, sans-serif; color: #666; margin: 0 0 15px 0;"><em>Compra fácil, recibe
-        rápido.</em></p>
-
+  <header>
+    <!-- Icono de carrito pequeño encima del formulario -->
+    <div class="logo-contenido">
+      <img src="../img/logoCarritoShopEasy.png" alt="Logo carrito ShopEasy" />
+    </div>
+    <h1>ShopEasy</h1>
+    <p><em>Compra fácil, recibe rápido.</em></p>
     <nav>
-      <ul style="padding: 0; margin: 0;">
-        <li style="display: inline; margin: 0 15px;"><a href="#"
-            style="color: #f76b1c; text-decoration: none; font-weight: bold;"><i class="fa-solid fa-house"></i>
-            Inicio</a></li>
-        <li style="display: inline; margin: 0 15px;"><a href="../catalogo/catalogo.html"
-            style="color: #2358a8; text-decoration: none;"><i class="fa-solid fa-box"></i> Catálogo</a></li>
-        <li style="display: inline; margin: 0 15px;"><a href="../carrito/carrito.html"
-            style="color: #2358a8; text-decoration: none;"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
-        <li style="display: inline; margin: 0 15px;"><a href="../login/login.html"
-            style="color: #2358a8; text-decoration: none;"><i class="fa-solid fa-right-to-bracket"></i> Iniciar
-            sesión</a></li>
-        <li style="display: inline; margin: 0 15px;"><a href="../registro/registro.html"
-            style="color: #2358a8; text-decoration: none;"><i class="fa-solid fa-building-user"></i> Registrarse</a>
-        </li>
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-house"></i>Inicio</a></li>
+        <li><a href="../catalogo/catalogo.html"><i class="fa-solid fa-box"></i> Catálogo</a></li>
+        <li><a href="../carrito/carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
+        <li><a href="../login/login.html"><i class="fa-solid fa-right-to-bracket"></i> Iniciar sesión</a></li>
+        <li><a href="../registro/registro.html"><i class="fa-solid fa-building-user"></i> Registrarse</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- CONTENIDO PRINCIPAL -->
-  <main style="text-align: center; max-width: 1200px; margin: 0 auto; padding: 20px;">
+  <main>
 
     <!-- SECCIÓN HERO / BIENVENIDA -->
-    <section class="hero"
-      style="background-color: #1a3c6e; color: white; padding: 40px 20px; border-radius: 10px; margin-bottom: 30px;">
-      <h2 style="margin: 0 0 10px 0;">Bienvenido a ShopEasy</h2>
-      <p style="margin: 0 0 20px 0;">Encuentra los mejores productos al mejor precio.
-        Compra desde cualquier lugar y recíbelos en la puerta de tu casa.</p>
-      <button
-        style="background-color: #f76b1c; border: none; padding: 12px 24px; margin: 5px; border-radius: 5px; cursor: pointer;"><a
-          href="../catalogo/catalogo.html" style="color: white; text-decoration: none;">Ver catálogo</a></button>
+    <section class="hero">
+      <h2>Bienvenido a ShopEasy</h2>
+      <p>Encuentra los mejores productos al mejor precio. Compra desde cualquier lugar y recíbelos en la puerta de tu
+        casa.</p>
+      <button><a href="../catalogo/catalogo.html">Ver catálogo</a></button>
       &nbsp;
-      <button
-        style="margin: 5px; border: 1px solid white; background-color: transparent; padding: 12px 24px; border-radius: 5px; cursor: pointer;"><a
-          href="../registro/registro.html" style="color: white; text-decoration: none;">Crear cuenta gratis</a></button>
+      <button><a href="../registro/registro.html">Crear cuenta gratis</a></button>
     </section>
 
     <!-- SECCIÓN CATEGORÍAS -->
-    <section class="categorias" style="margin-bottom: 30px;">
-      <h2 style="color: #1a3c6e; margin: 0 0 20px 0;">Categorías destacadas</h2>
+    <section class="categorias">
+      <h2>Categorías destacadas</h2>
 
-      <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-        <article
-          style="background-color: white; padding: 20px; border-radius: 10px; width: 220px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-          <h3 style="color: #2358a8; margin: 0 0 10px 0;">Electrónica</h3>
-          <p style="margin: 0 0 15px 0; color: #666;">Auriculares, cargadores, accesorios para laptop y más.</p>
-          <button
-            style="background-color: #f76b1c; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;"><a
-              href="../catalogo/catalogo.html" style="color: white; text-decoration: none;">Ver productos</a></button>
+      <div>
+        <article>
+          <h3>Electrónica</h3>
+          <p>Auriculares, cargadores, accesorios para laptop y más.</p>
+          <button><a href="../catalogo/catalogo.html">Ver productos</a></button>
         </article>
 
-        <article
-          style="background-color: white; padding: 20px; border-radius: 10px; width: 220px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-          <h3 style="color: #2358a8; margin: 0 0 10px 0;">Ropa y Moda</h3>
-          <p style="margin: 0 0 15px 0; color: #666;">Camisetas, zapatos, accesorios para toda la familia.</p>
-          <button
-            style="background-color: #f76b1c; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;"><a
-              href="../catalogo/catalogo.html" style="color: white; text-decoration: none;">Ver productos</a></button>
+        <article>
+          <h3>Ropa y Moda</h3>
+          <p>Camisetas, zapatos, accesorios para toda la familia.</p>
+          <button><a href="../catalogo/catalogo.html">Ver productos</a></button>
         </article>
 
-        <article
-          style="background-color: white; padding: 20px; border-radius: 10px; width: 220px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-          <h3 style="color: #2358a8; margin: 0 0 10px 0;">Hogar</h3>
-          <p style="margin: 0 0 15px 0; color: #666;">Todo lo que necesitas para decorar y organizar tu hogar.</p>
-          <button
-            style="background-color: #f76b1c; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;"><a
-              href="../catalogo/catalogo.html" style="color: white; text-decoration: none;">Ver productos</a></button>
+        <article>
+          <h3>Hogar</h3>
+          <p>Todo lo que necesitas para decorar y organizar tu hogar.</p>
+          <button><a href="../catalogo/catalogo.html">Ver productos</a></button>
         </article>
 
-        <article
-          style="background-color: white; padding: 20px; border-radius: 10px; width: 220px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-          <h3 style="color: #2358a8; margin: 0 0 10px 0;">Deportes</h3>
-          <p style="margin: 0 0 15px 0; color: #666;">Equipamiento deportivo para tus actividades favoritas.</p>
-          <button
-            style="background-color: #f76b1c; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;"><a
-              href="../catalogo/catalogo.html" style="color: white; text-decoration: none;">Ver productos</a></button>
+        <article>
+          <h3>Deportes</h3>
+          <p>Equipamiento deportivo para tus actividades favoritas.</p>
+          <button><a href="../catalogo/catalogo.html">Ver productos</a></button>
         </article>
       </div>
-      <hr style="margin: 30px 0 0 0;" />
+      <hr>
     </section>
 
     <!-- SECCIÓN PRODUCTOS DESTACADOS -->
-    <section class="productos-destacados" style="margin-bottom: 30px;">
-      <h2 style="color: #1a3c6e; margin: 0 0 20px 0;">Productos destacados</h2>
+    <section class="productos-destacados">
+      <h2>Productos destacados</h2>
 
-      <div style="display: flex; gap: 20px; justify-content: center;">
-        <article
-          style="background-color: white; padding: 20px; border-radius: 10px; width: 260px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-          <h3 style="color: #2358a8; margin: 0 0 10px 0;">Auriculares Bluetooth</h3>
-          <p style="margin: 5px 0; color: #666;">Categoría: Electrónica</p>
-          <p style="margin: 5px 0;">Precio: <strong style="color: #27ae60;">$45.99</strong></p>
-          <p style="margin: 0 0 15px 0; color: #666;">Stock disponible: 12 unidades</p>
-          <button
-            style="background-color: #2358a8; border: none; padding: 10px 15px; margin: 3px; border-radius: 5px; cursor: pointer;"><a
-              href="#" style="color: white; text-decoration: none;">Ver detalle</a></button>
+      <div>
+        <article>
+          <h3>Auriculares Bluetooth</h3>
+          <p>Categoría: Electrónica</p>
+          <p>Precio: <strong>$45.99</strong></p>
+          <p>Stock disponible: 12 unidades</p>
+          <button><a href="#">Ver detalle</a></button>
           &nbsp;
-          <button
-            style="background-color: #f76b1c; border: none; padding: 10px 15px; margin: 3px; border-radius: 5px; cursor: pointer;"><a
-              href="#carrito.html?agregar=501" style="color: white; text-decoration: none;">Agregar al
-              carrito</a></button>
+          <button><a href="#carrito.html?agregar=501">Agregar al carrito</a></button>
         </article>
 
-        <article
-          style="background-color: white; padding: 20px; border-radius: 10px; width: 260px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-          <h3 style="color: #2358a8; margin: 0 0 10px 0;">Funda para laptop 15"</h3>
-          <p style="margin: 5px 0; color: #666;">Categoría: Accesorios</p>
-          <p style="margin: 5px 0;">Precio: <strong style="color: #27ae60;">$18.50</strong></p>
-          <p style="margin: 0 0 15px 0; color: #666;">Stock disponible: 30 unidades</p>
-          <button
-            style="background-color: #2358a8; border: none; padding: 10px 15px; margin: 3px; border-radius: 5px; cursor: pointer;"><a
-              href="#" style="color: white; text-decoration: none;">Ver detalle</a></button>
+        <article>
+          <h3>Funda para laptop 15"</h3>
+          <p>Categoría: Accesorios</p>
+          <p>Precio: <strong>$18.50</strong></p>
+          <p>Stock disponible: 30 unidades</p>
+          <button><a href="#">Ver detalle</a></button>
           &nbsp;
-          <button
-            style="background-color: #f76b1c; border: none; padding: 10px 15px; margin: 3px; border-radius: 5px; cursor: pointer;"><a
-              href="#carrito.html?agregar=501" style="color: white; text-decoration: none;">Agregar al
-              carrito</a></button>
+          <button><a href="#carrito.html?agregar=501">Agregar al carrito</a></button>
         </article>
 
-        <article
-          style="background-color: white; padding: 20px; border-radius: 10px; width: 260px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-          <h3 style="color: #2358a8; margin: 0 0 10px 0;">Camiseta deportiva</h3>
-          <p style="margin: 5px 0; color: #666;">Categoría: Ropa</p>
-          <p style="margin: 5px 0;">Precio: <strong style="color: #27ae60;">$12.00</strong></p>
-          <p style="margin: 0 0 15px 0; color: #666;">Stock disponible: 50 unidades</p>
-          <button
-            style="background-color: #2358a8; border: none; padding: 10px 15px; margin: 3px; border-radius: 5px; cursor: pointer;"><a
-              href="#" style="color: white; text-decoration: none;">Ver detalle</a></button>
+        <article>
+          <h3>Camiseta deportiva</h3>
+          <p>Categoría: Ropa</p>
+          <p>Precio: <strong>$12.00</strong></p>
+          <p>Stock disponible: 50 unidades</p>
+          <button><a href="#">Ver detalle</a></button>
           &nbsp;
-          <button
-            style="background-color: #f76b1c; border: none; padding: 10px 15px; margin: 3px; border-radius: 5px; cursor: pointer;"><a
-              href="#carrito.html?agregar=501" style="color: white; text-decoration: none;">Agregar al
+          <button><a href="#carrito.html?agregar=501">Agregar al
               carrito</a></button>
         </article>
       </div>
-      <hr style="margin: 30px 0 0 0;" />
+      <hr />
     </section>
 
     <!-- SECCIÓN BÚSQUEDA -->
-    <section class="busqueda-home"
-      style="background-color: white; padding: 30px; border-radius: 10px; margin-bottom: 30px;">
-      <h2 style="margin: 0 0 15px 0;">Buscar productos</h2>
+    <section class="busqueda-home">
+      <h2>Buscar productos</h2>
       <form action="../catalogo/catalogo.html" method="get">
-        <label for="busqueda" style="display: block; margin: 0 0 10px 0;">¿Qué estás buscando?</label>
-        <input style="padding: 12px; margin: 0 10px 0 0; width: 300px; border: 1px solid #ddd; border-radius: 5px;"
-          type="search" id="busqueda" name="q" placeholder="Ej: auriculares, camiseta, silla..." />
-        <button type="submit"
-          style="color: white; background-color: #2358a8; border: none; padding: 12px 24px; border-radius: 5px; cursor: pointer;">Buscar</button>
+        <label for="busqueda">¿Qué estás buscando?</label>
+        <input type="search" id="busqueda" name="q" placeholder="Ej: auriculares, camiseta, silla..." />
+        <button type="submit">Buscar</button>
       </form>
-      <hr style="margin: 30px 0 0 0;" />
+      <hr />
     </section>
 
     <!-- SECCIÓN POR QUÉ ELEGIRNOS -->
-    <section class="seccion-elegirnos-home" style="margin-bottom: 30px;">
-      <h2 style="color: #1a3c6e; margin: 0 0 20px 0;">¿Por qué elegir ShopEasy?</h2>
+    <section class="seccion-elegirnos-home">
+      <h2>¿Por qué elegir ShopEasy?</h2>
 
-      <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-        <article
-          style="background-color: white; padding: 20px; border-radius: 10px; width: 220px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-          <h3 style="color: #2358a8; margin: 0 0 10px 0;">Envío rápido</h3>
-          <p style="margin: 0; color: #666;">Recibe tus pedidos en 24 a 48 horas en Santo Domingo y ciudades cercanas.
+      <div>
+        <article>
+          <h3>Envío rápido</h3>
+          <p>Recibe tus pedidos en 24 a 48 horas en Santo Domingo y ciudades cercanas.
           </p>
         </article>
 
-        <article
-          style="background-color: white; padding: 20px; border-radius: 10px; width: 220px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-          <h3 style="color: #2358a8; margin: 0 0 10px 0;">Pagos seguros</h3>
-          <p style="margin: 0; color: #666;">Aceptamos tarjeta de crédito, débito y pago contra entrega.</p>
+        <article>
+          <h3>Pagos seguros</h3>
+          <p>Aceptamos tarjeta de crédito, débito y pago contra entrega.</p>
         </article>
 
-        <article
-          style="background-color: white; padding: 20px; border-radius: 10px; width: 220px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-          <h3 style="color: #2358a8; margin: 0 0 10px 0;">Garantía de devolución</h3>
-          <p style="margin: 0; color: #666;">Si no estás satisfecho, tienes 7 días para devolver tu compra sin costo.
+        <article>
+          <h3>Garantía de devolución</h3>
+          <p>Si no estás satisfecho, tienes 7 días para devolver tu compra sin costo.
           </p>
         </article>
 
-        <article
-          style="background-color: white; padding: 20px; border-radius: 10px; width: 220px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-          <h3 style="color: #2358a8; margin: 0 0 10px 0;">Atención al cliente</h3>
-          <p style="margin: 0; color: #666;">Estamos disponibles de lunes a sábado de 8:00 a 18:00.</p>
+        <article>
+          <h3>Atención al cliente</h3>
+          <p>Estamos disponibles de lunes a sábado de 8:00 a 18:00.</p>
         </article>
       </div>
-      <hr style="margin: 30px 0 0 0;" />
+      <hr />
     </section>
 
     <!-- SECCIÓN INFORMACIÓN -->
-    <section style="background-color: white; padding: 20px; border-radius: 10px; margin-bottom: 30px;">
+    <section>
       <details>
-        <summary style="cursor: pointer; font-weight: bold; color: #2358a8;">
-          ¿Cuál es el objetivo de ShopEasy?
-        </summary>
+        <summary>¿Cuál es el objetivo de ShopEasy?</summary>
 
-        <p style="margin-top: 10px; color: #666;">
+        <p>
           El presente proyecto tiene como objetivo facilitar las compras online
           de forma rápida, segura y accesible para todos los usuarios.
         </p>
@@ -217,62 +169,50 @@
     </section>
 
     <!-- SECCIÓN OFERTA ESPECIAL -->
-    <section class="seccion-oferta-home"
-      style="background-color: #f76b1c; color: white; padding: 40px 20px; border-radius: 10px;">
-      <h2 style="margin: 0 0 10px 0;">Oferta del día</h2>
-      <p style="margin: 0 0 10px 0;">¡Hoy solamente! 20% de descuento en toda la categoría de Electrónica.</p>
-      <p style="margin: 0 0 20px 0;">Usa el código: <strong>SHOP20</strong></p>
-      <button
-        style="background-color: transparent; border: 1px solid white; padding: 12px 24px; margin: 5px; border-radius: 5px; cursor: pointer;"><a
-          href="../catalogo/catalogo.html?categoria=electronica" style="color: white; text-decoration: none;">Aprovechar
-          oferta</a></button>
+    <section class="seccion-oferta-home">
+      <h2>Oferta del día</h2>
+      <p>¡Hoy solamente! 20% de descuento en toda la categoría de Electrónica.</p>
+      <p>Usa el código: <strong>SHOP20</strong></p>
+      <button><a href="../catalogo/catalogo.html?categoria=electronica">Aprovechar oferta</a></button>
     </section>
 
   </main>
 
   <!-- PIE DE PÁGINA -->
-  <footer style="background-color: #1a3c6e; color: white; padding: 30px 20px; margin-top: 20px;">
-    <section class="footer-home" style="margin: 0 0 20px 0;">
-      <h3 style="margin: 0 0 10px 0;">ShopEasy</h3>
-      <p style="color: #ffffffb3; margin: 0;">Tu tienda online de confianza en Santo Domingo, Ecuador.</p>
+  <footer>
+    <section class="footer-home">
+      <h3>ShopEasy</h3>
+      <p>Tu tienda online de confianza en Santo Domingo, Ecuador.</p>
     </section>
 
-    <nav style="margin: 0 0 20px 0;">
-      <h4 style="margin: 0 0 10px 0;">Páginas</h4>
-      <ul style="padding: 0; margin: 0;">
-        <li style="display: inline; margin: 0 15px;"><a href="#"
-            style="color: #e67e22; text-decoration: none;">Inicio</a></li>
-        <li style="display: inline; margin: 0 15px;"><a href="../catalogo/catalogo.html"
-            style="color: #e67e22; text-decoration: none;">Catálogo</a></li>
-        <li style="display: inline; margin: 0 15px;"><a href="../carrito/carrito.html"
-            style="color: #e67e22; text-decoration: none;">Carrito</a></li>
-        <li style="display: inline; margin: 0 15px;"><a href="../login/login.html"
-            style="color: #e67e22; text-decoration: none;">Iniciar sesión</a></li>
-        <li style="display: inline; margin: 0 15px;"><a href="../registro/registro.html"
-            style="color: #e67e22; text-decoration: none;">Registrarse</a></li>
+    <nav>
+      <h4>Páginas</h4>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="../catalogo/catalogo.html">Catálogo</a></li>
+        <li><a href="../carrito/carrito.html">Carrito</a></li>
+        <li><a href="../login/login.html">Iniciar sesión</a></li>
+        <li><a href="../registro/registro.html">Registrarse</a></li>
       </ul>
     </nav>
 
-    <section class="contacto" style="margin: 0 0 20px 0;">
-      <h4 style="margin: 0 0 10px 0;">Contacto</h4>
-      <address style="font-style: normal;">
-        <p style="margin: 5px 0;">Email: <a href="mailto:contacto@shopeasy.ec"
-            style="color: #ffffffb3; text-decoration: none;">contacto@shopeasy.ec</a></p>
-        <p style="margin: 5px 0;">Teléfono: <a href="tel:+593991234567"
-            style="color: #ffffffb3; text-decoration: none;">+593 99 123 4567</a></p>
-        <p style="margin: 5px 0;">Santo Domingo de los Tsáchilas, Ecuador</p>
+    <section>
+      <h4>Contacto</h4>
+      <address>
+        <p>Email: <a href="mailto:contacto@shopeasy.ec">contacto@shopeasy.ec</a></p>
+        <p>Teléfono: <a href="tel:+593991234567">+593 99 123 4567</a></p>
+        <p>Santo Domingo de los Tsáchilas, Ecuador</p>
       </address>
     </section>
 
     <small>
-      <p style="color: #ffffffb3; margin: 20px 0 0 0;">
+      <p>
         &copy; 2026 ShopEasy &reg; Todos los derechos reservados &trade;
       </p>
     </small>
     <br>
     <li><strong>Dirección:</strong> Av. General Rumiñahui s/n, Sangolquí, Ecuador</li>
-    <a href="https://maps.app.goo.gl/a683TKhX5CdoCRYu8" target="_blank" style="color: white;"> Ver ubicación
-      en Google Maps</a>
+    <a href="https://maps.app.goo.gl/a683TKhX5CdoCRYu8" target="_blank"> Ver ubicación en Google Maps</a>
   </footer>
 
 </body>
